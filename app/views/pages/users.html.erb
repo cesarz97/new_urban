@@ -1,0 +1,17 @@
+<h1>Pages#users</h1>
+<p>Find me in app/views/pages/users.html.erb</p>
+
+
+<h1>Checkbox Form</h1>
+<%= form_tag process_form_path, method: :post do %>
+  <label>
+    <%= check_box_tag 'options[]', 'cleaning' %> cleaning
+  </label><br>
+  <label>
+    <%= check_box_tag 'options[]', 'electrical' %> electrical
+  </label><br>
+  <label>
+    <%= check_box_tag 'options[]', 'Plumbing' %> Plumbing
+  </label><br><br>
+  <%= submit_tag 'Submit' %>
+<% end %>

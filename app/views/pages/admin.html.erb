@@ -1,0 +1,15 @@
+<h1>Pages#admin</h1>
+<p>Find me in app/views/pages/admin.html.erb</p>
+
+
+<%= form_with(model: @option, url: options_path) do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  
+    <%= form.check_box :selected %>
+    
+    <%= form.submit "Create Option" %>
+  <% end %>
